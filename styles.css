@@ -1,0 +1,501 @@
+/* Center the submit button in the form */
+form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green */
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Hide the checkboxes */
+.read-more-toggle {
+    display: none;
+}
+
+/* Style the "Read more!" labels as clickable buttons */
+/* Style the "Read more!" labels as green buttons */
+.read-more-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline */
+}
+
+.read-more-label:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+/* Initially hide extra content */
+.extra-content {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Display the extra content when the checkbox is checked */
+.read-more-toggle:checked + .read-more-label + .extra-content {
+    display: block;
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background for better contrast */
+    color: #212529; /* Dark gray for text */
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #0056b3; /* Darker blue border */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+/* Logo Styles */
+.logo img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+/* Optional: If you want to add some spacing around the logo */
+.logo {
+    margin-right: 20px; /* Adds spacing between the logo and the navigation */
+}
+
+/* Adjust the header alignment for the logo */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Style for invalid input */
+form input:invalid, form textarea:invalid, form select:invalid {
+    border: 2px solid black;
+}
+
+/* Style for valid input */
+form input:valid, form textarea:valid, form select:valid {
+    border: 2px solid green;
+}
+
+/* Style for placeholder text */
+form input::placeholder, form textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Gold color for hover */
+}
+
+header .search input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9; /* Light background to distinguish the section */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff; /* Primary color for the heading */
+}
+
+.testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    color: #555; /* Medium gray for the testimonial text */
+    margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+    font-size: 18px;
+    color: #333; /* Darker gray for the name */
+}
+
+/* FAQs Section */
+.faqs {
+    background-color: #f9f9f9; /* Light background to distinguish the section */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.faqs h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff; /* Primary color for the heading */
+    text-align: center;
+}
+
+.faq-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Darker gray for the question */
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #555; /* Medium gray for the answer */
+    line-height: 1.5;
+}
+
+
+/* Instructors Section */
+.instructors {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.instructors h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff; /* Primary color for the heading */
+}
+
+.instructor-item {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.instructor-item img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.instructor-item h3 {
+    font-size: 22px;
+    color: #333; /* Darker gray for the name */
+    margin-bottom: 10px;
+}
+
+.instructor-item p {
+    font-size: 16px;
+    color: #555; /* Medium gray for the bio */
+    line-height: 1.5;
+}
+
+/* Scholarships Section */
+.scholarships {
+    background-color: #f9f9f9; /* Light background to make the section stand out */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.scholarships h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff; /* Primary color for the heading */
+}
+
+.scholarships p {
+    font-size: 16px;
+    color: #555; /* Medium gray for the text */
+    line-height: 1.5;
+}
+/* Timeline Section */
+.timeline {
+    background-color: #f9f9f9; /* Light background to differentiate the section */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.timeline h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff; /* Primary color for the heading */
+    text-align: center;
+}
+
+.timeline ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.timeline li {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff; /* Blue accent line */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+}
+
+.timeline li strong {
+    font-weight: bold;
+    color: #333; /* Darker color for the year */
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    margin: 30px auto;
+    border-radius: 8px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+}
+
+main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+main p {
+    margin-bottom: 20px;
+    color: #555; /* Medium gray for better readability */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+/* Courses Section */
+.courses {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.course-box {
+    background-color: #e9ecef; /* Light gray */
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #007bff; /* Blue accent border */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark gray */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .social-icons a:hover {
+    color: #ffd700; /* Gold hover color for icons */
+}
+
+/* Form Styles */
+form {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f8f9fa; /* Light gray */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .courses {
+        flex-direction: column;
+    }
+
+    .course-box {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        width: 90%;
+    }
+}
+
+/* Section Styles for About Us */
+section {
+    margin: 20px 0;
+    text-align: left;
+    background-color: #e9ecef; /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* List Styles for Course Info and Announcements */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Announcements Specific Styles */
+.announcements ul {
+    list-style-type: square;
+}
+
+/* Table Layout (if used) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6; /* Light border for table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Additional Styles */
+header, footer, main {
+    max-width: 100%;
+}
+
+/* Social Media Hover Effects */
+footer .social-icons a:hover {
+    color: #ffd700;
+}
