@@ -21,7 +21,6 @@
             </ul>
         </nav>
         <div class="search"><input type="text" placeholder="Search..."></div>
-        <!-- Same header content as index.html -->
     </header>
     <main>
         <h1>Admissions</h1>
@@ -29,8 +28,18 @@
         <section>
             <section class="scholarships">
                 <h2>Scholarships and Discounts</h2>
-                <p>We offer various scholarships and discounts for students and low-income individuals. Check your eligibility today!</p>
+                <p>We are committed to making education accessible to everyone, regardless of financial circumstances. That's why we offer a range of scholarships and discounts to eligible students. These include:</p>
+                <ul>
+                    <li><strong>Merit-Based Scholarships:</strong> Rewarding exceptional academic performance and dedication.</li>
+                    <li><strong>Need-Based Scholarships:</strong> Supporting students from low-income backgrounds.</li>
+                    <li><strong>Early Enrollment Discounts:</strong> Save more by registering early for upcoming courses.</li>
+                    <li><strong>Group Registration Discounts:</strong> Enroll with friends or colleagues and enjoy exclusive discounts.</li>
+                    <li><strong>Special Offers for Alumni:</strong> Continuing education discounts for returning students.</li>
+                </ul>
+                <p>To apply for a scholarship or discount, simply complete the scholarship application form during the registration process and attach any required documents. Our team will review your application and notify you of your eligibility.</p>
+                <p>Education is an investment in your future. Let us help you make it affordable and achievable!</p>
             </section>
+            
             
             <h2>How to Enroll</h2>
             <p>Enrolling in our courses is easy. Simply choose a course that fits your learning goals, fill out the registration form, and get started. Our courses offer flexible payment options to fit any budget.</p>
@@ -44,7 +53,53 @@
                 <li>Get career guidance and support throughout your journey</li>
             </ul>
         </section>
-        <button onclick="window.location.href='register.html'">Register Now</button>
+        <button onclick="openPaymentOptions()">Register Now</button>
+
+        <!-- Payment Options Modal -->
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closePaymentOptions()">&times;</span>
+                <h2>Payment Options</h2>
+                <form action="#">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="course">Select Course:</label>
+                    <select id="course" name="course">
+                        <option value="beginner-html">Beginner HTML</option>
+                        <option value="beginner-css">Beginner CSS</option>
+                        <option value="advanced-html">Advanced HTML</option>
+                        <option value="advanced-css">Advanced CSS</option>
+                    </select>
+
+                    <label for="discounts">Available Discounts:</label>
+            <select id="discounts" name="discounts">
+                <option value="merit-based">Merit-Based Scholarships</option>
+                <option value="need-based">Need-Based Scholarships</option>
+                <option value="early-enrollment">Early Enrollment Discounts</option>
+                <option value="group-discount">Group Registration Discounts</option>
+                <option value="alumni-offer">Special Offers for Alumni</option>
+            </select>
+
+
+                    <h3>Payment Options</h3>
+                    <label>
+                        <input type="radio" name="payment" value="credit-card" required> Credit Card
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="paypal" required> PayPal
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="bank-transfer" required> Bank Transfer
+                    </label>
+
+                    <button type="submit">Submit Payment</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; Made with HTML, CSS, JavaScript.</p>
@@ -54,7 +109,16 @@
             <a href="https://x.com/i/flow/login">Twitter</a>
             <a href="https://www.youtube.com/@Login.Signup">YouTube</a>
         </div>
-        <!-- Same footer content as index.html -->
     </footer>
+
+    <script>
+        function openPaymentOptions() {
+            document.getElementById("paymentModal").style.display = "block";
+        }
+
+        function closePaymentOptions() {
+            document.getElementById("paymentModal").style.display = "none";
+        }
+    </script>
 </body>
 </html>

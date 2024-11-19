@@ -21,30 +21,56 @@
             </ul>
         </nav>
         <div class="search"><input type="text" placeholder="Search..."></div>
-        <!-- Same header content as index.html -->
     </header>
     <main>
         <h1>Contact Us</h1>
         <p>If you have any questions, suggestions, or feedback, we'd love to hear from you! Reach out to us using the form below or via our social media channels.</p>
-        <form action="#" method="post">
+
+        <!-- Contact Form -->
+        <form action="#" method="post" class="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number"><br>
+            
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea><br>
-            <form action="#" method="post">
-                <!-- Form fields here -->
-                <button type="submit">Submit</button>
-            </form>
-            <!-- <button type="submit">Submit</button> -->
+            
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="admissions">Admissions</option>
+                <option value="technical-support">Technical Support</option>
+                <option value="feedback">Feedback</option>
+            </select><br>
+            
+            <button type="submit">Submit</button>
         </form>
+
+        <!-- Contact Details Section -->
         <div class="contact-details">
             <h2>Other Ways to Contact Us</h2>
             <p>Email: <a href="mailto:contact@csshtmlacademy.com">contact@csshtmlacademy.com</a></p>
-            <p>Phone: +123-456-7890</p>
+            <p>Phone: +437 808 2920</p>
             <p>Address: 123 Web Developer Lane, Code City, Techland 56789</p>
-            <p>Follow us on social media:</p>
+            
+        </div>
+
+        <!-- Embedded Google Map -->
+        <div class="map">
+            <h2>Visit Us</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098296!2d144.95565131571648!3d-37.81731397975167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5777052d7e2b1c2!2sCode%20City!5e0!3m2!1sen!2s!4v1699881234567!5m2!1sen!2s" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
         </div>
     </main>
     <footer>
@@ -55,7 +81,6 @@
             <a href="https://x.com/i/flow/login">Twitter</a>
             <a href="https://www.youtube.com/@Login.Signup">YouTube</a>
         </div>
-        <!-- Same footer content as index.html -->
     </footer>
 </body>
 </html>

@@ -1,3 +1,314 @@
+.scholarships {
+    background-color: #f9f9f9; /* Light background for distinction */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif; /* Ensure consistent font styling */
+}
+
+.scholarships h2 {
+    color: #007bff; /* Match header color */
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Optional for emphasis */
+}
+
+.scholarships p {
+    color: #555; /* Neutral gray for readability */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+}
+
+.scholarships ul {
+    margin-left: 20px; /* Indentation for bullet points */
+    padding-left: 0;
+}
+
+.scholarships ul li {
+    list-style-type: disc; /* Standard bullet points */
+    margin-bottom: 10px; /* Spacing between points */
+    color: #333; /* Darker text for contrast */
+}
+
+.scholarships ul li strong {
+    color: black; /* Highlight keywords with header color */
+}
+
+.scholarships ul li:hover {
+    color: black; /* Darker blue for hover effect */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.scholarships a {
+    color: black; /* Link color for scholarships */
+    text-decoration: underline;
+}
+
+.scholarships a:hover {
+    color: black; /* Darker hover color */
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: black; /* Darker blue for hover */
+    color: #fff; /* Keep text color white */
+    text-decoration: none; /* No underline */
+}
+
+/* General Styles */
+
+header .search input {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #45a049;
+}
+
+/* Contact Details Styles */
+.contact-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-details ul li {
+    margin-bottom: 10px;
+}
+
+.contact-details ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact-details ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Map Section */
+.map {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .contact-form,
+    .contact-details {
+        margin-bottom: 20px;
+    }
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin: 10px 0 5px;
+}
+
+.modal-content input,
+.modal-content select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.modal-content button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #45a049;
+}
+
+
 /* Center the submit button in the form */
 form button[type="submit"] {
     display: block;
