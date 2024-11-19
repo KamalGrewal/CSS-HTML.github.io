@@ -10,7 +10,10 @@
     <header>
         <div class="logo"><a href="index.html"><img src="Images/Logo 1.png" alt="CSS & HTML Academy Logo" width="100"></a></div>
         <nav>
-            <ul>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                ☰
+            </button>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="admissions.html">Admissions</a></li>
                 <li><a href="course_content.html">Course Content</a></li>
@@ -75,5 +78,15 @@
         </div>
         <!-- Same footer content as index.html -->
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+    
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 </html>
