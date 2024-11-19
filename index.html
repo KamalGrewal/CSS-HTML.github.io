@@ -10,6 +10,9 @@
     <header>
         <div class="logo"><a href="index.html"><img src="Images/Logo 1.png" alt="CSS & HTML Academy Logo" width="100"></a></div>
         <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                ☰
+            </button>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="admissions.html">Admissions</a></li>
@@ -126,5 +129,16 @@
             <a href="https://www.youtube.com/@Login.Signup">YouTube</a>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+    
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>
+    
 </body>
 </html>
