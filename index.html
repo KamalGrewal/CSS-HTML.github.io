@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS & HTML Academy - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <div class="logo"><a href="index.html"><img src="Images/Logo 1.png" alt="CSS & HTML Academy Logo" width="100"></a></div>
+        <div class="logo"><a href="index.html"><img src="Images/Logo 1.png" alt="CSS & HTML Academy Logo"
+                    width="100"></a></div>
         <nav>
             <button class="menu-toggle" aria-label="Toggle navigation menu">
                 ☰
@@ -31,8 +34,8 @@
         <a href="admissions.html">
             <button>Start learning today</button>
         </a>
-        
-        
+
+
         <!-- <section class="courses">
             <div class="course-box">
                 <h3>Beginner HTML</h3>
@@ -59,64 +62,71 @@
             <div class="course-box">
                 <h3>Beginner HTML</h3>
                 <p>Learn the basics of HTML and how to structure web pages.</p>
-                
+
                 <!-- Read More Toggle for HTML Course -->
                 <input type="checkbox" id="html-read-more-toggle" class="read-more-toggle">
                 <label for="html-read-more-toggle" class="read-more-label">Read more!</label>
-        
+
                 <!-- Extra Content for HTML Course -->
                 <div class="extra-content">
-                    <p>This course covers foundational HTML concepts such as headings, paragraphs, lists, links, and images. By the end, you'll be able to create structured, accessible web pages with ease.</p>
+                    <p>This course covers foundational HTML concepts such as headings, paragraphs, lists, links, and
+                        images. By the end, you'll be able to create structured, accessible web pages with ease.</p>
                 </div>
             </div>
-        
+
             <!-- Beginner CSS Course -->
             <div class="course-box">
                 <h3>Beginner CSS</h3>
                 <p>Understand how to style web pages using CSS, from colors to layouts.</p>
-                
+
                 <!-- Read More Toggle for CSS Course -->
                 <input type="checkbox" id="css-read-more-toggle" class="read-more-toggle">
                 <label for="css-read-more-toggle" class="read-more-label">Read more!</label>
-        
+
                 <!-- Extra Content for CSS Course -->
                 <div class="extra-content">
-                    <p>In this course, you will learn CSS syntax, selectors, and properties. Topics include colors, fonts, box model, flexbox, and grid layouts, giving you the skills to create visually appealing web pages.</p>
+                    <p>In this course, you will learn CSS syntax, selectors, and properties. Topics include colors,
+                        fonts, box model, flexbox, and grid layouts, giving you the skills to create visually appealing
+                        web pages.</p>
                 </div>
             </div>
-        
+
             <!-- Projects Course -->
             <div class="course-box">
                 <h3>Projects</h3>
                 <p>Apply what you've learned by building real-world projects.</p>
-                
+
                 <!-- Read More Toggle for Projects Course -->
                 <input type="checkbox" id="projects-read-more-toggle" class="read-more-toggle">
                 <label for="projects-read-more-toggle" class="read-more-label">Read more!</label>
-        
+
                 <!-- Extra Content for Projects Course -->
                 <div class="extra-content">
-                    <p>This section includes hands-on projects where you’ll build a personal portfolio, a landing page, and an interactive form, allowing you to showcase your HTML and CSS skills in a practical way.</p>
+                    <p>This section includes hands-on projects where you’ll build a personal portfolio, a landing page,
+                        and an interactive form, allowing you to showcase your HTML and CSS skills in a practical way.
+                    </p>
                 </div>
             </div>
         </section>
-        
 
 
 
 
 
 
-        
+
+
     </main>
     <section class="testimonials">
         <h2>What Our Students Say</h2>
         <div class="testimonial-item">
-            <p>"The courses at CSS & HTML Academy helped me transition into a web development career. The projects were especially useful for building my portfolio!"</p>
+            <p>"The courses at CSS & HTML Academy helped me transition into a web development career. The projects were
+                especially useful for building my portfolio!"</p>
             <h4>- Alex J.</h4>
         </div>
         <div class="testimonial-item">
-            <p>"I loved the interactive coding exercises and community support. I learned so much in such a short time!"</p>
+            <p>"I loved the interactive coding exercises and community support. I learned so much in such a short time!"
+            </p>
             <h4>- Sarah K.</h4>
         </div>
     </section>
@@ -130,16 +140,17 @@
         </div>
     </footer>
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
 
-        menuToggle.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
         });
-    });
-</script>
+    </script>
 
-    
+
 </body>
+
 </html>
