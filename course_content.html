@@ -3,60 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS & HTML Academy - Course Content Info</title>
+    <title>CSS & HTML Academy - Course Content</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="CSS & HTML Academy Logo" width="100"></a></div>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="CSS & HTML Academy Logo"></a>
+        </div>
         <nav>
-            <button class="menu-toggle" aria-label="Toggle navigation menu">
-                ☰
-            </button>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
             <ul class="nav-links">
-        
                 <li><a href="index.html">Home</a></li>
                 <li><a href="admissions.html">Admissions</a></li>
                 <li><a href="course_content.html">Course Content</a></li>
-                <li><a href="course_info.html">Course Content Info</a></li>
+                <li><a href="course_info.html">Course Info</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="announcements.html">Announcements</a></li>
             </ul>
         </nav>
         <div class="search"><input type="text" placeholder="Search..."></div>
-        <!-- Same header content as index.html -->
     </header>
     <main>
-        <h1>Course Content Info</h1>
-        <p>Get detailed information about our courses.</p>
-        <ul>
-            <li>Course Overview</li>
-            <li>Learning Modules</li>
-            <li>Examples and Practice Projects</li>
-            <li>Quizzes and Exercises</li>
-        </ul>
-        <p>Our courses are structured to help you master HTML and CSS with practical projects and detailed lessons.</p>
+        <h1>Our Courses</h1>
+        <p>Explore our detailed and engaging courses to master HTML and CSS from the ground up.</p>
+
+        <section class="courses">
+            <div class="course-box">
+                <h2>HTML for Beginners</h2>
+                <p>Start your journey with the basics of HTML and learn how to structure web pages effectively.</p>
+                <button onclick="location.href='course_info.html'">Learn More</button>
+            </div>
+            <div class="course-box">
+                <h2>Advanced HTML</h2>
+                <p>Enhance your knowledge with advanced HTML techniques, including forms and multimedia elements.</p>
+                <button onclick="location.href='course_info.html'">Learn More</button>
+            </div>
+            <div class="course-box">
+                <h2>CSS for Beginners</h2>
+                <p>Discover the power of CSS to style your web pages beautifully with layouts, colors, and typography.</p>
+                <button onclick="location.href='course_info.html'">Learn More</button>
+            </div>
+            <div class="course-box">
+                <h2>Advanced CSS</h2>
+                <p>Master advanced CSS concepts like animations, transitions, and responsive design principles.</p>
+                <button onclick="location.href='course_info.html'">Learn More</button>
+            </div>
+        </section>
+
+        
+
+        
     </main>
     <footer>
-        <p>&copy; Made with HTML, CSS, JavaScript.</p>
+        <p>&copy; 2024 CSS & HTML Academy. Made with ❤️ in HTML, CSS, and JavaScript.</p>
         <div class="social-icons">
             <a href="https://www.facebook.com/login/">Facebook</a>
             <a href="https://www.instagram.com/accounts/login/">Instagram</a>
             <a href="https://x.com/i/flow/login">Twitter</a>
             <a href="https://www.youtube.com/@Login.Signup">YouTube</a>
         </div>
-        <!-- Same footer content as index.html -->
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.querySelector(".menu-toggle");
-            const navLinks = document.querySelector(".nav-links");
-    
-            menuToggle.addEventListener("click", () => {
-                navLinks.classList.toggle("active");
-            });
-        });
-    </script>
 </body>
 </html>

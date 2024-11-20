@@ -1,3 +1,338 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f3f4f6; /* Soft background color */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient for header */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffdd57; /* Bright yellow for hover */
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+main p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Course Boxes */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.course-box {
+    background: #fff; /* White background for contrast */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-box h2 {
+    color: #2575fc; /* Blue heading */
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.course-box p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.course-box button {
+    padding: 0.5rem 1.5rem;
+    background: #2575fc; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.course-box button:hover {
+    background-color: #6a11cb; /* Gradient match for hover */
+}
+
+.course-box:hover {
+    transform: translateY(-10px); /* Subtle lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Footer Styling */
+footer {
+    background: #333; /* Dark footer background */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 4px solid #6a11cb; /* Accent border */
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .social-icons a {
+    color: #6a11cb; /* Match header gradient */
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ffdd57; /* Bright yellow hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+        background: #6a11cb;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 10px 10px;
+        padding: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .courses {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #0056a5, #003a75);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Main Content Styling */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #003a75;
+}
+
+main p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+main ul li {
+    background: #eef6ff;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    background: #003a75;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer .social-icons a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+footer .social-icons a:hover {
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+        background: #003a75;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .search {
+        display: none;
+    }
+}
 /* General Styles for Navigation */
 nav {
     display: flex;
@@ -165,7 +500,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: black; /* Darker blue for hover */
+    background: #6a11cb; /* Darker blue for hover */
     color: #fff; /* Keep text color white */
     text-decoration: none; /* No underline */
 }
