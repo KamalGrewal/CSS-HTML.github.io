@@ -1,16 +1,87 @@
+/* Timeline Section */
+.timeline {
+    background-color: #f9f9f9;
+    /* Light background to differentiate the section */
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1500px;
+    /* Center-align with a fixed width */
+    text-align: center;
+    /* Center the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for depth */
+}
+
+.timeline h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff;
+    /* Primary color for the heading */
+    text-align: center;
+}
+
+.timeline ul {
+    list-style: none;
+    /* Remove default list styling */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1400px;
+    /* Center-align with a fixed width */
+}
+
+.timeline li {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-left: none;
+    /* Remove left border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for a lifted effect */
+    text-align: left;
+    
+}
+
+.timeline li strong {
+    font-weight: bold;
+    color: #333;
+    /* Darker color for the year */
+}
+
+/* Responsive Design for Timeline */
+@media (max-width: 768px) {
+    .timeline {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .timeline ul {
+        max-width: 100%;
+        /* Allow full-width on smaller screens */
+    }
+
+    .timeline li {
+        text-align: center;
+        /* Center-align text for smaller screens */
+    }
+}
+
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f3f4f6; /* Soft background color */
+    background-color: #f3f4f6;
+    /* Soft background color */
     color: #333;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient for header */
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    /* Gradient for header */
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
@@ -19,7 +90,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
 }
 
 .logo img {
@@ -42,7 +114,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffdd57; /* Bright yellow for hover */
+    color: #ffdd57;
+    /* Bright yellow for hover */
 }
 
 .menu-toggle {
@@ -89,16 +162,19 @@ main p {
 }
 
 .course-box {
-    background: #fff; /* White background for contrast */
+    background: #fff;
+    /* White background for contrast */
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .course-box h2 {
-    color: #2575fc; /* Blue heading */
+    color: #2575fc;
+    /* Blue heading */
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
 }
@@ -112,7 +188,8 @@ main p {
 
 .course-box button {
     padding: 0.5rem 1.5rem;
-    background: #2575fc; /* Blue button */
+    background: #2575fc;
+    /* Blue button */
     color: #fff;
     border: none;
     border-radius: 20px;
@@ -122,22 +199,27 @@ main p {
 }
 
 .course-box button:hover {
-    background-color: #6a11cb; /* Gradient match for hover */
+    background-color: #6a11cb;
+    /* Gradient match for hover */
 }
 
 .course-box:hover {
-    transform: translateY(-10px); /* Subtle lift effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    transform: translateY(-10px);
+    /* Subtle lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow */
 }
 
 /* Footer Styling */
 footer {
-    background: #333; /* Dark footer background */
+    background: #333;
+    /* Dark footer background */
     color: #fff;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
-    border-top: 4px solid #6a11cb; /* Accent border */
+    border-top: 4px solid #6a11cb;
+    /* Accent border */
 }
 
 footer p {
@@ -145,7 +227,8 @@ footer p {
 }
 
 footer .social-icons a {
-    color: #6a11cb; /* Match header gradient */
+    color: #6a11cb;
+    /* Match header gradient */
     text-decoration: none;
     margin: 0 0.5rem;
     font-size: 1.5rem;
@@ -153,7 +236,8 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-    color: #ffdd57; /* Bright yellow hover effect */
+    color: #ffdd57;
+    /* Bright yellow hover effect */
 }
 
 /* Responsive Design */
@@ -184,10 +268,10 @@ footer .social-icons a:hover {
     }
 
     .courses {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
     }
 }
-
 
 
 /* General Styling */
@@ -333,12 +417,14 @@ footer .social-icons a:hover {
         display: none;
     }
 }
+
 /* General Styles for Navigation */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff; /* Blue background */
+    background-color: #007bff;
+    /* Blue background */
     padding: 10px 20px;
     position: relative;
 }
@@ -370,7 +456,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #0056b3; /* Darker blue for hover */
+    background-color: #0056b3;
+    /* Darker blue for hover */
 }
 
 /* Responsive Navigation */
@@ -382,7 +469,8 @@ nav ul li a:hover {
     nav ul {
         display: none;
         flex-direction: column;
-        background-color: #007bff; /* Match header background */
+        background-color: #007bff;
+        /* Match header background */
         position: absolute;
         top: 100%;
         left: 0;
@@ -405,55 +493,72 @@ nav ul li a:hover {
         padding: 15px;
     }
 }
+
 .scholarships {
-    background-color: #f9f9f9; /* Light background for distinction */
+    background-color: #f9f9f9;
+    /* Light background for distinction */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for elevation */
     margin-bottom: 20px;
-    font-family: Arial, sans-serif; /* Ensure consistent font styling */
+    font-family: Arial, sans-serif;
+    /* Ensure consistent font styling */
 }
 
 .scholarships h2 {
-    color: #007bff; /* Match header color */
+    color: #007bff;
+    /* Match header color */
     font-size: 24px;
     margin-bottom: 15px;
-    text-transform: uppercase; /* Optional for emphasis */
+    text-transform: uppercase;
+    /* Optional for emphasis */
 }
 
 .scholarships p {
-    color: #555; /* Neutral gray for readability */
-    line-height: 1.6; /* Improve readability */
+    color: #555;
+    /* Neutral gray for readability */
+    line-height: 1.6;
+    /* Improve readability */
     margin-bottom: 15px;
 }
 
 .scholarships ul {
-    margin-left: 20px; /* Indentation for bullet points */
+    margin-left: 20px;
+    /* Indentation for bullet points */
     padding-left: 0;
 }
 
 .scholarships ul li {
-    list-style-type: disc; /* Standard bullet points */
-    margin-bottom: 10px; /* Spacing between points */
-    color: #333; /* Darker text for contrast */
+    list-style-type: disc;
+    /* Standard bullet points */
+    margin-bottom: 10px;
+    /* Spacing between points */
+    color: #333;
+    /* Darker text for contrast */
 }
 
 .scholarships ul li strong {
-    color: black; /* Highlight keywords with header color */
+    color: black;
+    /* Highlight keywords with header color */
 }
 
 .scholarships ul li:hover {
-    color: black; /* Darker blue for hover effect */
-    transition: color 0.3s ease; /* Smooth transition on hover */
+    color: black;
+    /* Darker blue for hover effect */
+    transition: color 0.3s ease;
+    /* Smooth transition on hover */
 }
 
 .scholarships a {
-    color: black; /* Link color for scholarships */
+    color: black;
+    /* Link color for scholarships */
     text-decoration: underline;
 }
 
 .scholarships a:hover {
-    color: black; /* Darker hover color */
+    color: black;
+    /* Darker hover color */
     text-decoration: none;
 }
 
@@ -500,9 +605,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: #6a11cb; /* Darker blue for hover */
-    color: #fff; /* Keep text color white */
-    text-decoration: none; /* No underline */
+    background: #6a11cb;
+    /* Darker blue for hover */
+    color: #fff;
+    /* Keep text color white */
+    text-decoration: none;
+    /* No underline */
 }
 
 /* General Styles */
@@ -647,6 +755,7 @@ footer .social-icons a:hover {
         margin-bottom: 20px;
     }
 }
+
 /* Modal Styles */
 .modal {
     display: none;
@@ -721,7 +830,8 @@ form button[type="submit"] {
     display: block;
     margin: 0 auto;
     padding: 10px 20px;
-    background-color: #28a745; /* Green */
+    background-color: #28a745;
+    /* Green */
     color: #fff;
     border: none;
     font-size: 16px;
@@ -739,7 +849,8 @@ form button[type="submit"] {
 .read-more-label {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #28a745; /* Green */
+    background-color: #28a745;
+    /* Green */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -749,11 +860,13 @@ form button[type="submit"] {
     text-align: center;
     margin-top: 10px;
     transition: background-color 0.3s;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
+    /* Remove underline */
 }
 
 .read-more-label:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #218838;
+    /* Darker green on hover */
 }
 
 
@@ -765,7 +878,7 @@ form button[type="submit"] {
 }
 
 /* Display the extra content when the checkbox is checked */
-.read-more-toggle:checked + .read-more-label + .extra-content {
+.read-more-toggle:checked+.read-more-label+.extra-content {
     display: block;
 }
 
@@ -780,19 +893,23 @@ form button[type="submit"] {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa; /* Light gray background for better contrast */
-    color: #212529; /* Dark gray for text */
+    background-color: #f8f9fa;
+    /* Light gray background for better contrast */
+    color: #212529;
+    /* Dark gray for text */
 }
 
 /* Header Styles */
 header {
-    background-color: #007bff; /* Blue */
+    background-color: #007bff;
+    /* Blue */
     color: #fff;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid #0056b3; /* Darker blue border */
+    border-bottom: 3px solid #0056b3;
+    /* Darker blue border */
 }
 
 header .logo {
@@ -800,10 +917,13 @@ header .logo {
     font-weight: bold;
     color: #fff;
 }
+
 /* Logo Styles */
 .logo img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintains aspect ratio */
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintains aspect ratio */
     display: block;
 }
 
@@ -813,7 +933,8 @@ header .logo {
 
 /* Optional: If you want to add some spacing around the logo */
 .logo {
-    margin-right: 20px; /* Adds spacing between the logo and the navigation */
+    margin-right: 20px;
+    /* Adds spacing between the logo and the navigation */
 }
 
 /* Adjust the header alignment for the logo */
@@ -822,18 +943,24 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
 /* Style for invalid input */
-form input:invalid, form textarea:invalid, form select:invalid {
+form input:invalid,
+form textarea:invalid,
+form select:invalid {
     border: 2px solid black;
 }
 
 /* Style for valid input */
-form input:valid, form textarea:valid, form select:valid {
+form input:valid,
+form textarea:valid,
+form select:valid {
     border: 2px solid green;
 }
 
 /* Style for placeholder text */
-form input::placeholder, form textarea::placeholder {
+form input::placeholder,
+form textarea::placeholder {
     color: #888;
     font-style: italic;
 }
@@ -854,7 +981,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ffd700; /* Gold color for hover */
+    color: #ffd700;
+    /* Gold color for hover */
 }
 
 header .search input {
@@ -865,7 +993,8 @@ header .search input {
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #f9f9f9; /* Light background to distinguish the section */
+    background-color: #f9f9f9;
+    /* Light background to distinguish the section */
     padding: 40px 20px;
     border-radius: 8px;
     margin: 20px 0;
@@ -875,14 +1004,16 @@ header .search input {
 .testimonials h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #007bff; /* Primary color for the heading */
+    color: #007bff;
+    /* Primary color for the heading */
 }
 
 .testimonial-item {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for a lifted effect */
     margin-bottom: 20px;
     max-width: 600px;
     margin-left: auto;
@@ -891,18 +1022,21 @@ header .search input {
 
 .testimonial-item p {
     font-style: italic;
-    color: #555; /* Medium gray for the testimonial text */
+    color: #555;
+    /* Medium gray for the testimonial text */
     margin-bottom: 10px;
 }
 
 .testimonial-item h4 {
     font-size: 18px;
-    color: #333; /* Darker gray for the name */
+    color: #333;
+    /* Darker gray for the name */
 }
 
 /* FAQs Section */
 .faqs {
-    background-color: #f9f9f9; /* Light background to distinguish the section */
+    background-color: #f9f9f9;
+    /* Light background to distinguish the section */
     padding: 40px 20px;
     border-radius: 8px;
     margin: 20px 0;
@@ -911,7 +1045,8 @@ header .search input {
 .faqs h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #007bff; /* Primary color for the heading */
+    color: #007bff;
+    /* Primary color for the heading */
     text-align: center;
 }
 
@@ -919,19 +1054,22 @@ header .search input {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for a lifted effect */
     margin-bottom: 20px;
 }
 
 .faq-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333; /* Darker gray for the question */
+    color: #333;
+    /* Darker gray for the question */
 }
 
 .faq-item p {
     font-size: 16px;
-    color: #555; /* Medium gray for the answer */
+    color: #555;
+    /* Medium gray for the answer */
     line-height: 1.5;
 }
 
@@ -939,7 +1077,8 @@ header .search input {
 /* Instructors Section */
 .instructors {
     padding: 40px 20px;
-    background-color: #f9f9f9; /* Light background */
+    background-color: #f9f9f9;
+    /* Light background */
     border-radius: 8px;
     margin: 20px 0;
     text-align: center;
@@ -948,7 +1087,8 @@ header .search input {
 .instructors h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #007bff; /* Primary color for the heading */
+    color: #007bff;
+    /* Primary color for the heading */
 }
 
 .instructor-item {
@@ -956,7 +1096,8 @@ header .search input {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow */
     margin: 10px;
     width: 300px;
     text-align: center;
@@ -972,19 +1113,22 @@ header .search input {
 
 .instructor-item h3 {
     font-size: 22px;
-    color: #333; /* Darker gray for the name */
+    color: #333;
+    /* Darker gray for the name */
     margin-bottom: 10px;
 }
 
 .instructor-item p {
     font-size: 16px;
-    color: #555; /* Medium gray for the bio */
+    color: #555;
+    /* Medium gray for the bio */
     line-height: 1.5;
 }
 
 /* Scholarships Section */
 .scholarships {
-    background-color: #f9f9f9; /* Light background to make the section stand out */
+    background-color: #f9f9f9;
+    /* Light background to make the section stand out */
     padding: 40px 20px;
     border-radius: 8px;
     margin: 20px 0;
@@ -994,17 +1138,21 @@ header .search input {
 .scholarships h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #007bff; /* Primary color for the heading */
+    color: #007bff;
+    /* Primary color for the heading */
 }
 
 .scholarships p {
     font-size: 16px;
-    color: #555; /* Medium gray for the text */
+    color: #555;
+    /* Medium gray for the text */
     line-height: 1.5;
 }
+
 /* Timeline Section */
 .timeline {
-    background-color: #f9f9f9; /* Light background to differentiate the section */
+    background-color: #f9f9f9;
+    /* Light background to differentiate the section */
     padding: 40px 20px;
     border-radius: 8px;
     margin: 20px 0;
@@ -1013,12 +1161,14 @@ header .search input {
 .timeline h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #007bff; /* Primary color for the heading */
+    color: #007bff;
+    /* Primary color for the heading */
     text-align: center;
 }
 
 .timeline ul {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
+    /* Remove default list styling */
     padding: 0;
     margin: 0;
 }
@@ -1027,14 +1177,17 @@ header .search input {
     background-color: #fff;
     padding: 15px 20px;
     margin-bottom: 10px;
-    border-left: 4px solid #007bff; /* Blue accent line */
+    border-left: 4px solid #007bff;
+    /* Blue accent line */
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Light shadow for a lifted effect */
 }
 
 .timeline li strong {
     font-weight: bold;
-    color: #333; /* Darker color for the year */
+    color: #333;
+    /* Darker color for the year */
 }
 
 /* Main Content Styles */
@@ -1045,7 +1198,8 @@ main {
     margin: 30px auto;
     border-radius: 8px;
     max-width: 1200px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Light shadow for a lifted effect */
 }
 
 main h1 {
@@ -1056,13 +1210,15 @@ main h1 {
 
 main p {
     margin-bottom: 20px;
-    color: #555; /* Medium gray for better readability */
+    color: #555;
+    /* Medium gray for better readability */
 }
 
 /* Button Styles */
 button {
     padding: 10px 20px;
-    background-color: #28a745; /* Green */
+    background-color: #28a745;
+    /* Green */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -1072,7 +1228,8 @@ button {
 }
 
 button:hover {
-    background-color: #218838; /* Darker green for hover */
+    background-color: #218838;
+    /* Darker green for hover */
 }
 
 /* Courses Section */
@@ -1084,19 +1241,22 @@ button:hover {
 }
 
 .course-box {
-    background-color: #e9ecef; /* Light gray */
+    background-color: #e9ecef;
+    /* Light gray */
     padding: 20px;
     border-radius: 8px;
     width: 30%;
     text-align: center;
     margin: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-top: 4px solid #007bff; /* Blue accent border */
+    border-top: 4px solid #007bff;
+    /* Blue accent border */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #343a40; /* Dark gray */
+    background-color: #343a40;
+    /* Dark gray */
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -1118,7 +1278,8 @@ footer .social-icons a {
 }
 
 footer .social-icons a:hover {
-    color: #ffd700; /* Gold hover color for icons */
+    color: #ffd700;
+    /* Gold hover color for icons */
 }
 
 /* Form Styles */
@@ -1126,7 +1287,8 @@ form {
     text-align: left;
     max-width: 600px;
     margin: 20px auto;
-    background-color: #f8f9fa; /* Light gray */
+    background-color: #f8f9fa;
+    /* Light gray */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1138,11 +1300,13 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ced4da; /* Light border */
+    border: 1px solid #ced4da;
+    /* Light border */
     border-radius: 4px;
 }
 
@@ -1170,7 +1334,8 @@ form input, form textarea {
 section {
     margin: 20px 0;
     text-align: left;
-    background-color: #e9ecef; /* Light gray background */
+    background-color: #e9ecef;
+    /* Light gray background */
     padding: 20px;
     border-radius: 8px;
 }
@@ -1199,17 +1364,23 @@ table {
     margin-top: 20px;
 }
 
-table, th, td {
-    border: 1px solid #dee2e6; /* Light border for table */
+table,
+th,
+td {
+    border: 1px solid #dee2e6;
+    /* Light border for table */
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: left;
 }
 
 /* Additional Styles */
-header, footer, main {
+header,
+footer,
+main {
     max-width: 100%;
 }
 
